@@ -26,6 +26,7 @@ using background-color is important to cover the menu position absolute to cover
 */
 
 #content {
+	text-align: center;
 	background-color: #fff;
 	padding: 52px 10px 10px 10px;
 	position: relative;

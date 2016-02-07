@@ -3,19 +3,51 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Slide-out Menu</title>
+	<!-- also prevents users from zooming in/out -->
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+	<link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-	<header>
-		Header
-	</header>
-
-	<nav>
-		Navigation
-	</nav>
-
-	<div id="content">
+	<div id="container">
 		
+		<header>
+			<div id="hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</header>
+		
+		<!-- the mobile navigation hidden via css -->
+		<nav>
+			<ul>
+				<li><a href="#">Menu Item 1</a></li>
+				<li><a href="#">Menu Item 2</a></li>
+				<li><a href="#">Menu Item 3</a></li>
+				<li><a href="#">Menu Item 4</a></li>
+				<li><a href="#">Menu Item 5</a></li>
+			</ul>
+		</nav>
+		
+		<!-- this will be layered over the content so that the content's unclickable when the menu is shown-->
+		<div id="content-layer"></div>
+			
+		<div id="content">
+			<!-- site content here -->
+			<h1><a href="http://www.rmangels.net/mat235/sketchblog/group-ia/tutorial.html">Hamburger Menu</a></h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quo vitae commodi, vel deserunt harum omnis ex eum voluptatibus molestias hic, earum similique veritatis dolor libero, molestiae magnam, ea saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut tempore veniam aperiam, assumenda temporibus ad! Magni, laudantium totam laborum quo debitis voluptatibus rerum veniam quam, ea. Minima architecto perferendis fugit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptas nostrum distinctio tenetur saepe dolor, omnis tempora ad non neque maxime facere officia, ratione iure adipisci enim obcaecati doloribus dolorem.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quo vitae commodi, vel deserunt harum omnis ex eum voluptatibus molestias hic, earum similique veritatis dolor libero, molestiae magnam, ea saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat pariatur earum quia sed, cumque ipsa aliquam quidem aliquid quo nesciunt nostrum suscipit tenetur, quaerat explicabo doloribus! Vel excepturi, maiores sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nostrum illo dicta sint voluptates, non molestiae eos. Nulla, perspiciatis, tempore, voluptates maxime modi sint debitis labore aliquam, beatae ullam aperiam.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quo vitae commodi, vel deserunt harum omnis ex eum voluptatibus molestias hic, earum similique veritatis dolor libero, molestiae magnam, ea saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut tempore veniam aperiam, assumenda temporibus ad! Magni, laudantium totam laborum quo debitis voluptatibus rerum veniam quam, ea. Minima architecto perferendis fugit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptas nostrum distinctio tenetur saepe dolor, omnis tempora ad non neque maxime facere officia, ratione iure adipisci enim obcaecati doloribus dolorem.</p>
+
+		</div>
+		
+		
+		
+
 	</div>
 	
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+	<script src="./js/index.js"></script>
 </body>
 </html>

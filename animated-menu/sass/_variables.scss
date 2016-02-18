@@ -1,0 +1,9 @@
+// Menu Item Variables
+// The number of items in the menu
+$menu-items: 5;
+// We multiply it by 1% to get the correct % unit
+$width: (100/$menu-items) * 1%;
+
+// Colors
+$background-color: #121212;
+$indicator-color: #e82d00;

@@ -1,0 +1,79 @@
+/****************************************
+  Inherited Syles
+*****************************************/
+
+/*
+See this explanation for details
+https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+
+html {
+    background-color: $background-color;
+    box-sizing: border-box;
+    color: #444;
+    font: 12pt 'Open Sans', serif;
+    font-weight: 300;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    color: inherit;
+    font: inherit;
+}
+
+// Extending the http://css-tricks.com/micro-clearfix/
+%cf:before,
+%cf:after {
+    content: " ";
+    display: table;
+}
+%cf:after {
+    clear: both;
+}
+
+
+
+.toggle {
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/****************************************
+  Defaults
+*****************************************/
+
+
+/****************************************
+  Helpers
+*****************************************/
+
+
+/****************************************
+  Layout
+*****************************************/
+
+// The parent container
+.primary-nav {
+	// Remove the bullet points by default
+	list-style: none;
+	// Center all the things!
+	margin: 50px auto;
+	// The nav will never exceed this width and what our
+	// calculated percentages related back to
+	max-width: 720px;
+	padding: 0;
+	width: 100%
+}
+
+// The menu items
+.nav-item {
+	background: #fff;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	// Our current calculation of 5 items will generate 20%
+	width: $width;
+}
